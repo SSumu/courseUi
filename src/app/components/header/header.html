@@ -1,0 +1,27 @@
+<!--<p>header works!</p>-->
+<!--<mat-slide-toggle>Toggle me!</mat-slide-toggle>-->
+<!--<button mat-button color="primary">Primary</button>-->
+<!--<button mat-raised-button color="primary" >Primary</button>-->
+
+<!-- Above codes has taken from the video. -->
+
+<!--<button matButton>Basic</button>-->
+<!--<button matButton="elevated">Basic</button>-->
+
+<!-- Above codes has taken from the Angular Material official site. -->
+<!-- Above codes are for the testing purposes. -->
+
+<!--<p>-->
+<mat-toolbar class="primary-toolbar" color="primary" role="heading"> <!-- color and role are the classes. -->
+  <mat-toolbar-row>
+<!--  <button matIconButton class="example-icon" aria-label="Example icon-button with menu icon">-->
+<!--    <mat-icon>menu</mat-icon>-->
+<!--  </button>-->
+    <mat-icon style="cursor:pointer; color: white" (click)="toggleMenu()">menu</mat-icon>
+    <span class="example-spacer"></span>
+    <span>Springboot Academy</span>
+    <span class="example-spacer"></span> <!-- example-spacer is a class given by the toolbar itself. -->
+    <mat-icon style="cursor: pointer; color: red">logout</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+<!--</p>-->
