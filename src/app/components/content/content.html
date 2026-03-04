@@ -1,0 +1,47 @@
+<!--<p>content works!</p>-->
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer [opened]="opened"  mode="side">
+    <mat-list>
+
+      <mat-list-item routerLink="/cars" [routerLinkActive]="['active']">
+        <!--        This is normal in newer Angular Material versions (Angular 17–21) — mat-list-icon no longer exists, so IntelliJ IDEA will not suggest it. mat-list-icon was deprecated and removed when Angular Material switched to MDC-based components. -->
+        <mat-icon color="primary" matListItemIcon inline>directions_car</mat-icon>
+        <a matLine>Cars</a> <!-- matLine makes the icon smaller. Then we call car.html like this inside content.html. -->
+<!--        <a matLine>Cars</a>-->
+<!--        <span matLine>Cars</span>-->
+      </mat-list-item>
+
+      <mat-list-item [routerLinkActive]="['active']">
+<!--        This is normal in newer Angular Material versions (Angular 17–21) — mat-list-icon no longer exists, so IntelliJ IDEA will not suggest it. mat-list-icon was deprecated and removed when Angular Material switched to MDC-based components. -->
+        <mat-icon color="primary" matListItemIcon inline>sell</mat-icon>
+<!--        <a mat-line>Cars</a> &lt;!&ndash; matLine makes the icon smaller. &ndash;&gt;-->
+        <a matLine>Fuel-Type</a> <!-- matLine makes the icon smaller. -->
+<!--        <span matLine>Fuel-Type</span>-->
+      </mat-list-item>
+
+      <mat-list-item [routerLinkActive]="['active']">
+<!--        This is normal in newer Angular Material versions (Angular 17–21) — mat-list-icon no longer exists, so IntelliJ IDEA will not suggest it. mat-list-icon was deprecated and removed when Angular Material switched to MDC-based components. -->
+        <mat-icon color="primary" matListItemIcon inline>store</mat-icon>
+        <a matLine>Reservation</a> <!-- matLine makes the icon smaller. -->
+<!--        <span matLine>Reservation</span>-->
+      </mat-list-item>
+
+      <mat-list-item [routerLinkActive]="['active']">
+<!--        This is normal in newer Angular Material versions (Angular 17–21) — mat-list-icon no longer exists, so IntelliJ IDEA will not suggest it. mat-list-icon was deprecated and removed when Angular Material switched to MDC-based components. -->
+        <mat-icon color="primary" matListItemIcon inline>spa</mat-icon>
+        <a matLine>Reports</a> <!-- matLine makes the icon smaller. -->
+<!--        <span matLine>Reports</span>-->
+      </mat-list-item>
+
+    </mat-list>
+  </mat-drawer>
+
+
+<!-- It needs to connect this to a router outlet. -->
+<mat-drawer-content>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</mat-drawer-content>
+
+</mat-drawer-container>

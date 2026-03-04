@@ -3,13 +3,17 @@ import { Component, signal } from '@angular/core';
 import {Header} from './components/header/header';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {Content} from './components/content/content';
 
 @Component({
   selector: 'app-root',
   imports: [/*RouterOutlet,*/
     Header,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    Content
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
